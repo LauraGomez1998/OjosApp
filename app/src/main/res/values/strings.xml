@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Tesa</string>
+    <string name="text_help_green_practice_type">OJO DERECHO</string>
+    <string name="text_help_red_practice_type">OJO IZQUIERDO</string>
+    <string name="text_help_rest_practice_type">¡DIA LIBRE!</string>
+    <string name="alert_green_practice">Seleccione el tiempo deseado y recuerde: Hoy corresponde el ojo derecho con el oclusor verde.</string>
+    <string name="alert_red_practice">Seleccione el tiempo deseado y recuerde: Hoy corresponde el ojo izquierdo con el oclusor rojo.</string>
+    <string name="alert_practice_running">Tiene una práctica en ejecución, si la cancela deberá volver a comenzar de nuevo.\n¿Está seguro? </string>
+    <string name="alert_permission_title">Tesa quiere enviarte notificaciones.</string>
+    <string name="alert_permission_message">Las notificaciones podría incluir alertas, sonidos y globos, los cuales se pueden definir en configuración.</string>
+    <string name="alert_practice_finished">¡Felicitaciones ha terminado el ejercicio!</string>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="net.tesa.ojosapp">
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OjosApp">
+        <service
+            android:name="net.tesa.ojosapp.model.BroadcastTimerService"
+            android:exported="false"
+            android:icon="@drawable/ic_launcher_background" >
+            <intent-filter>
+                <action android:name="net.tesa.ojosapp.ACTION_INIT"/>
+                <action android:name="net.tesa.ojosapp.ACTION_START"/>
+                <action android:name="net.tesa.ojosapp.ACTION_STOP"/>
+            </intent-filter>
+        </service>
+        <activity
+            android:name="net.tesa.ojosapp.view.VideoViewActivity"
+            android:exported="false" />
+        <activity
+            android:theme="@style/PdfTheme"
+            android:name="net.tesa.ojosapp.view.PdfViewActivity"
+            android:exported="false" />
+        <activity
+            android:name="net.tesa.ojosapp.view.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
